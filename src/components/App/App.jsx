@@ -13,10 +13,10 @@ const App = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
 
-  // Викликаємо операцію
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
+
   return (
     <Container>
       <Section title="Phonebook">
